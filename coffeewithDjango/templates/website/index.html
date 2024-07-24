@@ -1,0 +1,15 @@
+{% load static %} 
+ {% comment %} to tell template engine we want to load static files  {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee with Django</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    {% comment %} using template engine to load static file that is style.css  {% endcomment %}
+</head>
+<body>
+    <h1>Coffee with Django</h1>
+</body>
+</html>
